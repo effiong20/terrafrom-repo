@@ -91,7 +91,7 @@ resource "aws_route_table_association" "public-associat1" {
   subnet_id      = aws_subnet.public1.id
   route_table_id = aws_route_table.public_rout.id
 }
-
+/*
 resource "aws_route_table_association" "public-associat" {
   subnet_id      = aws_subnet.public2.id
   route_table_id = aws_route_table.public_rout.id
