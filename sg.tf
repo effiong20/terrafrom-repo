@@ -21,7 +21,12 @@ locals {
  {
    port = 80
    description = "http port for my ingress rules"
+ },
+ {
+  port = 443
  }]
+
+
 
 }
 resource "aws_security_group" "allow_tls" {
