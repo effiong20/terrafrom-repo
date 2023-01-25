@@ -11,7 +11,7 @@ resource "aws_instance" "web" {
         Name = "${local.stage}-ec2-sample"
   }
 }
-
+/*
 locals {
   ingress_rules = [{
     port = 22
@@ -23,7 +23,7 @@ locals {
    description = "http port for my ingress rules"
  },
  {
-  port = 443
+  port = 443 
  }]
 
 
