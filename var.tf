@@ -19,4 +19,3 @@ variable "my_ami"{
 }
 
 variable "my_region"{}
-
