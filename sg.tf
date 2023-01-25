@@ -11,7 +11,7 @@ resource "aws_instance" "web" {
         Name = "${local.stage}-ec2-sample"
   }
 }
-/*
+
 locals {
   ingress_rules = [{
     port = 22
