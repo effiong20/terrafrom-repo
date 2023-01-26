@@ -1,7 +1,7 @@
 
 resource "aws_instance" "web" {
   ami           = lookup(var.my_ami, var.my_region)
-  instance_type = var.my_variable
+  instance_type = t2.micro
   key_name = "${aws_key_pair.mykey1.key_name}"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   subnet_id = aws_subnet.public1.id
